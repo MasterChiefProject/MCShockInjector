@@ -2,7 +2,7 @@
 #define MEMORY_H
 
 #include <windows.h>
-//AAAAAA
+
 namespace memory {
 
 	HANDLE open_process(DWORD process_id, DWORD desired_access);
@@ -20,7 +20,7 @@ namespace memory {
 	BOOL enum_process_modules_ex(HANDLE h_process, HMODULE* lph_module, DWORD cb, LPDWORD lpcb_needed, DWORD dw_filter_flag);
 
 	LPVOID virtual_alloc_ex(HANDLE h_process, LPVOID lp_address, SIZE_T dw_size, DWORD fl_allocation_type, DWORD fl_protect);
-	
+
 	BOOL virtual_free_ex(HANDLE h_process, LPVOID lp_address, SIZE_T dw_size, DWORD dw_free_type);
 }  // namespace memory
 
