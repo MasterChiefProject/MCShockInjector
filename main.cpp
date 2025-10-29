@@ -1,4 +1,7 @@
 #include "memory.h"
+#include "shellcode_manager.hpp"
+#include "utils.hpp"
+
 int main() {
 	//1. First we detect that VALORANT-Win64-Shipping.exe is running.
 
